@@ -11,8 +11,6 @@ int main(void)
 	{
 	putchar(alphabit);
 	alphabit ++;
-	if (alphabit == 'e' || alphabit == 'q')
-	alphabit++;
 	}
 	putchar('\n');
 	return (0);
