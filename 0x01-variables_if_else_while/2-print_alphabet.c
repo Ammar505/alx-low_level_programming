@@ -7,10 +7,11 @@
 int main(void)
 {
 	char alphabit = 'a';
-	while ( alphabit <= 'z')
+
+	while (alphabit <= 'z')
 	{
 	putchar(alphabit);
-	alphabit ++;
+	alphabit++;
 	}
 	putchar('\n');
 	return (0);
