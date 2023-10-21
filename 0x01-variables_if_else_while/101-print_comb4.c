@@ -6,30 +6,25 @@
  */
 int main(void)
 {
-	int digit1, digit2, digit3, digit4;
+    int i, j, k;
 
-	for (digit1 = 0; digit1 <= 9; digit1++)
-	{
-		for (digit2 = digit1 + 1; digit2 <= 9; digit2++)
-		{
-			for (digit3 = digit2 + 1; digit3 <= 9; digit3++)
-			{
-				for (digit4 = digit3 + 1; digit4 <= 9; digit4++)
-				{
-					putchar(digit1 + '0');
-					putchar(digit2 + '0');
-					putchar(digit3 + '0');
-					putchar(digit4 + '0');
-					if (!(digit1 == 9 && digit2 == 8
-					&& digit3 == 7 && digit4 == 6))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-			}
-		}
-	}
-	putchar('\n');
-	return (0);
+    for (i = 0; i < 8; i++)
+    {
+        for (j = i + 1; j < 9; j++)
+        {
+            for (k = j + 1; k < 10; k++)
+            {
+                putchar(i + '0');
+                putchar(j + '0');
+                putchar(k + '0');
+                if (i != 7 || j != 8 || k != 9)
+                {
+                    putchar(',');
+                    putchar(' ');
+                }
+            }
+        }
+    }
+
+    return (0);
 }
